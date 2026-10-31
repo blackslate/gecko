@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=en>
 <head>
   <meta charset="utf-8">
   <title>Puzzle n° 31</title>
@@ -103,6 +103,7 @@
   var fill = document.querySelector("animate#fill")
   var zoom = document.querySelector("animate#zoom")
 
+  setTimeout(animate, 2000)
   text.onmouseup = text.ontouchend = animate
   text.style.cursor = "pointer"
 
@@ -135,7 +136,7 @@
     setTimeout(function () {
       text.style.cursor = "pointer"
       body.onmouseup = body.ontouchend = show
-      timeout = setTimeout(show, 10000)
+      timeout = setTimeout(show, 2000)
   
       function show() {
         if (timeout) {
